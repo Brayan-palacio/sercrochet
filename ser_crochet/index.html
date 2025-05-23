@@ -1778,6 +1778,39 @@
         });
       };
     }
+    // En tu archivo JS principal o antes de cerrar el body
+fetch('/_data/productos')
+  .then(response => response.json())
+  .then(productos => {
+    const swiperWrapper = document.querySelector('.swiper-wrapper');
+    
+    productos.forEach(producto => {
+      const badge = producto.nuevo ? '<span class="product-badge">Nuevo</span>' : 
+                    producto.oferta ? '<span class="product-badge">Oferta</span>' : '';
+      
+      swiperWrapper.innerHTML += `
+        <div class="swiper-slide" data-category="${producto.categoria}">
+          <div class="product-card">
+            <div class="product-img">
+              <img src="${producto.imagen}" alt="${producto.nombre}" loading="lazy">
+              ${badge}
+            </div>
+            <div class="product-info">
+              <span class="product-category">${producto.categoria}</span>
+              <h3 class="product-title">${producto.nombre}</h3>
+              <p class="product-description">${producto.descripcion}</p>
+              <div class="product-price">$${producto.precio.toLocaleString()} COP</div>
+              <a href="https://wa.me/573226102915?text=Me%20interesa%20${encodeURIComponent(producto.nombre)}" 
+                 class="product-cta">Consultar</a>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+    
+    // Reinicia Swiper después de cargar los productos
+    swiper.update();
+  });
   </script>
 </body>
 </html>
