@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="SER CROCHET">
+  <meta name="robots" content="index, follow">
+  <title>SER CROCHET | Artesanías en Crochet Hechas a Mano</title>
+  <meta name="description" content="Productos artesanales en crochet 100% hechos a mano con materiales ecológicos. Bolsos, accesorios y decoración con diseños únicos." />
+  <meta name="keywords" content="crochet, bolsos artesanales, tejidos a mano, trapillo, macramé, regalos ecológicos, moda sostenible" />
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" as="style">
+  <link rel="preload" href="Img/hero-image-optimized.webp" as="image">
+  
+  <!-- Favicon with multiple sizes -->
+  <link rel="icon" href="Img/favicon.ico" sizes="any">
+  <link rel="icon" href="Img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="Img/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="SER CROCHET | Artesanías en Crochet Hechas a Mano" />
+  <meta property="og:description" content="Descubre nuestra colección de productos artesanales en crochet, elaborados con técnicas tradicionales y materiales sostenibles." />
+  <meta property="og:image" content="https://sercrochet.kesug.com/Img/social-share.webp" />
+  <meta property="og:url" content="https://sercrochet.kesug.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="SER CROCHET" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SER CROCHET | Artesanías en Crochet Hechas a Mano">
+  <meta name="twitter:description" content="Productos artesanales en crochet 100% hechos a mano con materiales ecológicos.">
+  <meta name="twitter:image" content="https://sercrochet.kesug.com/Img/social-share.webp">
+
+<style> :root {--primary-color: #f8e1e7;--secondary-color: #d4a5b5;--accent-color: #9e6a7a;--dark-color: #3a2e32;--light-color: #fff9fa;--text-color: #333;--text-light: #6d6d6d;--transition: all 0.3s ease;--shadow-sm: 0 2px 15px rgba(0, 0, 0, 0.1);--shadow-md: 0 5px 15px rgba(0, 0, 0, 0.1);--shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);}* {box-sizing: border-box;margin: 0;padding: 0;}html {scroll-behavior: smooth;}body {font-family: 'Raleway', sans-serif;color: var(--text-color);background-color: var(--light-color);line-height: 1.6;overflow-x: hidden;}h1, h2, h3, h4 {font-family: 'Playfair Display', serif;font-weight: 600;color: var(--dark-color);line-height: 1.2;}img {max-width: 100%;height: auto;display: block;}a {text-decoration: none;color: inherit;}button {border: none;background: none;cursor: pointer;font-family: inherit;}.skip-link {position: absolute;top: -40px;left: 0;background: var(--accent-color);color: white;padding: 8px;z-index: 100;transition: top 0.3s;}.skip-link:focus {top: 0;}.main-header {position: fixed;top: 0;width: 100%;z-index: 1000;background-color: rgba(248, 225, 231, 0.98);backdrop-filter: blur(8px);box-shadow: var(--shadow-sm);transition: var(--transition);}.header-container {display: flex;justify-content: space-between;align-items: center;max-width: 1200px;margin: 0 auto;padding: 15px 20px;}.logo {display: flex;align-items: center;gap: 10px;}.logo img {height: 50px;width: auto;transition: var(--transition);}.logo-text {font-family: 'Playfair Display', serif;font-weight: 700;font-size: clamp(1.2rem, 3vw, 1.4rem);color: var(--dark-color);}.main-nav ul {display: flex;list-style: none;gap: 30px;}.main-nav li {position: relative;}.main-nav a {font-weight: 500;font-size: 0.95rem;letter-spacing: 0.5px;transition: color 0.3s;padding: 5px 0;position: relative;}.main-nav a:hover, .main-nav a:focus {color: var(--accent-color);outline: none;}.main-nav a::after {content: '';position: absolute;width: 0;height: 2px;bottom: 0;left: 0;background-color: var(--accent-color);transition: width 0.3s;}.main-nav a:hover::after, .main-nav a:focus::after {width: 100%;}.nav-cta {background-color: var(--accent-color);color: white !important;padding: 8px 20px;border-radius: 30px;margin-left: 25px;transition: var(--transition);}.nav-cta:hover, .nav-cta:focus {background-color: var(--dark-color);color: white !important;transform: translateY(-2px);}.nav-cta::after {display: none;}.hero {height: 100vh;min-height: 700px;background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('Img/hero-image-optimized.jpg') center/cover no-repeat;display: flex;align-items: center;text-align: center;color: white;padding-top: 80px;}.hero-content {max-width: 800px;margin: 0 auto;padding: 0 20px;}.hero h1 {font-size: clamp(2.2rem, 5vw, 3.5rem);margin-bottom: 20px;color: white;text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);}.hero p {font-size: clamp(1rem, 2vw, 1.2rem);margin-bottom: 30px;opacity: 0.9;}.hero-btns {display: flex;justify-content: center;gap: 20px;flex-wrap: wrap;}.btn {display: inline-block;padding: 12px 30px;border-radius: 30px;text-decoration: none;font-weight: 600;transition: var(--transition);font-size: 0.95rem;text-align: center;}.btn-primary {background-color: var(--accent-color);color: white;border: 2px solid var(--accent-color);}.btn-primary:hover, .btn-primary:focus {background-color: transparent;color: white;outline: none;}.btn-secondary {background-color: transparent;color: white;border: 2px solid white;}.btn-secondary:hover, .btn-secondary:focus {background-color: white;color: var(--dark-color);outline: none;}.section {padding: 100px 20px;max-width: 1200px;margin: 0 auto;}.section-title {text-align: center;margin-bottom: 60px;}.section-title h2 {font-size: clamp(2rem, 4vw, 2.5rem);position: relative;display: inline-block;padding-bottom: 15px;}.section-title h2::after {content: '';position: absolute;width: 80px;height: 3px;background-color: var(--secondary-color);bottom: 0;left: 50%;transform: translateX(-50%);}.section-title p {max-width: 700px;margin: 15px auto 0;color: var(--text-light);}.about-container {display: flex;align-items: center;gap: 50px;}.about-img {flex: 1;border-radius: 10px;overflow: hidden;box-shadow: var(--shadow-md);aspect-ratio: 1/1;}.about-img img {width: 100%;height: 100%;object-fit: cover;transition: transform 0.5s;}.about-img:hover img {transform: scale(1.03);}.about-content {flex: 1;}.about-content h3 {font-size: clamp(1.5rem, 3vw, 1.8rem);margin-bottom: 20px;}.about-content p {margin-bottom: 20px;color: var(--text-light);}.mission-vision {display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));gap: 30px;margin-top: 40px;}.mission-card {background-color: white;padding: 30px;border-radius: 10px;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);transition: var(--transition);}.mission-card:hover {transform: translateY(-5px);box-shadow: var(--shadow-lg);}.mission-card i {font-size: 2.5rem;color: var(--secondary-color);margin-bottom: 20px;}.mission-card h4 {font-size: 1.3rem;margin-bottom: 15px;}.products-section {background-color: var(--primary-color);}.products-filter {display: flex;justify-content: center;flex-wrap: wrap;gap: 10px;margin-bottom: 40px;}.filter-btn {padding: 8px 20px;background-color: transparent;border: 1px solid var(--secondary-color);color: var(--dark-color);border-radius: 30px;cursor: pointer;transition: var(--transition);}.filter-btn.active, .filter-btn:hover, .filter-btn:focus {background-color: var(--secondary-color);color: white;outline: none;}.swiper {width: 100%;padding: 20px 0 50px;}.product-card {background-color: white;border-radius: 10px;overflow: hidden;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);transition: var(--transition);height: 100%;display: flex;flex-direction: column;}.product-card:hover {transform: translateY(-10px);box-shadow: var(--shadow-lg);}.product-img {position: relative;overflow: hidden;height: 300px;}.product-img img {width: 100%;height: 100%;object-fit: cover;transition: transform 0.5s;}.product-card:hover .product-img img {transform: scale(1.05);}.product-badge {position: absolute;top: 15px;right: 15px;background-color: var(--accent-color);color: white;padding: 5px 10px;border-radius: 5px;font-size: 0.8rem;font-weight: 600;}.product-info {padding: 20px;flex-grow: 1;display: flex;flex-direction: column;}.product-category {color: var(--secondary-color);font-size: 0.9rem;margin-bottom: 5px;text-transform: uppercase;letter-spacing: 1px;}.product-title {font-size: 1.2rem;margin-bottom: 10px;font-family: 'Playfair Display', serif;}.product-description {color: var(--text-light);font-size: 0.9rem;margin-bottom: 15px;flex-grow: 1;}.product-price {font-size: 1.3rem;font-weight: 600;color: var(--dark-color);margin-bottom: 15px;}.product-cta {display: inline-block;text-align: center;padding: 10px;background-color: var(--dark-color);color: white;border-radius: 5px;text-decoration: none;font-weight: 500;transition: var(--transition);}.product-cta:hover, .product-cta:focus {background-color: var(--accent-color);outline: none;}.swiper-button-next, .swiper-button-prev {color: var(--dark-color);background-color: rgba(255, 255, 255, 0.8);width: 50px;height: 50px;border-radius: 50%;box-shadow: var(--shadow-sm);transition: var(--transition);}.swiper-button-next:hover, .swiper-button-prev:hover {background-color: white;}.swiper-button-next::after, .swiper-button-prev::after {font-size: 1.2rem;}.swiper-pagination-bullet {width: 12px;height: 12px;background-color: var(--secondary-color);opacity: 0.5;}.swiper-pagination-bullet-active {opacity: 1;}.testimonials-section {background-color: white;}.testimonials-container {display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));gap: 30px;}.testimonial-card {background-color: var(--light-color);padding: 30px;border-radius: 10px;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);position: relative;}.testimonial-card::before {content: '\201C';font-family: Georgia, serif;font-size: 4rem;color: var(--secondary-color);opacity: 0.2;position: absolute;top: 10px;left: 10px;}.testimonial-content {margin-bottom: 20px;font-style: italic;color: var(--text-light);position: relative;z-index: 1;}.testimonial-author {display: flex;align-items: center;}.author-img {width: 50px;height: 50px;border-radius: 50%;overflow: hidden;margin-right: 15px;flex-shrink: 0;}.author-img img {width: 100%;height: 100%;object-fit: cover;}.author-info h4 {font-size: 1rem;margin-bottom: 5px;}.author-info p {font-size: 0.8rem;color: var(--text-light);}.rating {color: #f5c518;margin-top: 5px;}.contact-section {background-color: var(--primary-color);}.contact-container {display: grid;grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));gap: 50px;}.contact-info {display: flex;flex-direction: column;}.contact-card {display: flex;align-items: flex-start;margin-bottom: 30px;}.contact-icon {font-size: 1.5rem;color: var(--accent-color);margin-right: 15px;margin-top: 5px;flex-shrink: 0;}.contact-text h3 {font-size: 1.2rem;margin-bottom: 5px;}.contact-text p, .contact-text a {color: var(--text-light);text-decoration: none;transition: var(--transition);}.contact-text a:hover, .contact-text a:focus {color: var(--accent-color);outline: none;}.social-links {display: flex;gap: 15px;margin-top: 20px;}.social-links a {display: flex;align-items: center;justify-content: center;width: 40px;height: 40px;background-color: var(--secondary-color);color: white;border-radius: 50%;transition: var(--transition);}.social-links a:hover, .social-links a:focus {background-color: var(--accent-color);transform: translateY(-3px);outline: none;}.contact-form {background-color: white;padding: 30px;border-radius: 10px;box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);}.form-group {margin-bottom: 20px;}.form-group label {display: block;margin-bottom: 8px;font-weight: 500;}.form-control {width: 100%;padding: 12px 15px;border: 1px solid #ddd;border-radius: 5px;font-family: 'Raleway', sans-serif;transition: var(--transition);}.form-control:focus {outline: none;border-color: var(--secondary-color);box-shadow: 0 0 0 2px rgba(212, 165, 181, 0.2);}textarea.form-control {min-height: 150px;resize: vertical;}.submit-btn {background-color: var(--accent-color);color: white;border: none;padding: 12px 30px;border-radius: 30px;cursor: pointer;font-weight: 600;transition: var(--transition);width: 100%;}.submit-btn:hover, .submit-btn:focus {background-color: var(--dark-color);outline: none;}.main-footer {background-color: var(--dark-color);color: white;padding: 50px 20px 20px;}.footer-container {max-width: 1200px;margin: 0 auto;display: grid;grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));gap: 30px;}.footer-col h3 {color: white;font-size: 1.2rem;margin-bottom: 20px;position: relative;padding-bottom: 10px;}.footer-col h3::after {content: '';position: absolute;width: 40px;height: 2px;background-color: var(--secondary-color);bottom: 0;left: 0;}.footer-col p {color: rgba(255, 255, 255, 0.7);margin-bottom: 15px;}.footer-links {list-style: none;}.footer-links li {margin-bottom: 10px;}.footer-links a {color: rgba(255, 255, 255, 0.7);text-decoration: none;transition: var(--transition);}.footer-links a:hover, .footer-links a:focus {color: white;outline: none;}.footer-social {display: flex;gap: 15px;}.footer-social a {color: white;font-size: 1.2rem;transition: var(--transition);}.footer-social a:hover, .footer-social a:focus {color: var(--secondary-color);transform: translateY(-3px);outline: none;}.copyright {text-align: center;padding-top: 30px;margin-top: 30px;border-top: 1px solid rgba(255, 255, 255, 0.1);color: rgba(255, 255, 255, 0.7);font-size: 0.9rem;}.whatsapp-float {position: fixed;bottom: 30px;right: 30px;width: 60px;height: 60px;background-color: #25D366;color: white;border-radius: 50%;display: flex;align-items: center;justify-content: center;font-size: 1.8rem;box-shadow: var(--shadow-md);z-index: 999;text-decoration: none;transition: var(--transition);}.whatsapp-float:hover, .whatsapp-float:focus {background-color: #128C7E;transform: translateY(-3px);outline: none;}.menu-btn {display: none;font-size: 1.5rem;color: var(--dark-color);cursor: pointer;z-index: 1001;background: none;border: none;padding: 5px;}.cookie-consent {position: fixed;bottom: 0;left: 0;right: 0;background-color: var(--dark-color);color: white;padding: 20px;z-index: 1000;display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;gap: 15px;transform: translateY(100%);transition: transform 0.3s ease;}.cookie-consent.show {transform: translateY(0);}.cookie-consent p {margin: 0;flex: 1;min-width: 250px;}.cookie-btn {background-color: var(--accent-color);color: white;padding: 8px 20px;border-radius: 30px;transition: var(--transition);}.cookie-btn:hover {background-color: var(--secondary-color);}.back-to-top {position: fixed;bottom: 100px;right: 30px;width: 50px;height: 50px;background-color: var(--accent-color);color: white;border-radius: 50%;display: flex;align-items: center;justify-content: center;font-size: 1.2rem;box-shadow: var(--shadow-sm);z-index: 998;opacity: 0;visibility: hidden;transition: var(--transition);}.back-to-top.show {opacity: 1;visibility: visible;}.back-to-top:hover, .back-to-top:focus {background-color: var(--dark-color);transform: translateY(-3px);outline: none;}@media (max-width: 992px) {.about-container {flex-direction: column;}.about-img {max-width: 500px;margin: 0 auto;}}@media (max-width: 768px) {.header-container {padding: 15px;}.logo-text {display: none;}.menu-btn {display: block;}.main-nav {position: fixed;top: 0;right: -100%;width: 280px;height: 100vh;background-color: white;box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);flex-direction: column;padding: 80px 30px 30px;transition: right 0.3s ease;}.main-nav.active {right: 0;}.main-nav ul {flex-direction: column;gap: 20px;}.nav-cta {margin: 20px 0 0 0;text-align: center;}.hero {min-height: 600px;padding-top: 70px;}.section {padding: 70px 20px;}.whatsapp-float, .back-to-top {width: 50px;height: 50px;font-size: 1.5rem;bottom: 20px;right: 20px;}.back-to-top {bottom: 90px;}}@media (max-width: 480px) {.hero-btns {flex-direction: column;gap: 15px;}.btn {width: 100%;}.mission-vision {grid-template-columns: 1fr;}.cookie-consent {flex-direction: column;text-align: center;}.cookie-consent p {min-width: auto;}}@keyframes fadeIn {from {opacity: 0;}to {opacity: 1;}}@keyframes slideUp {from {opacity: 0;transform: translateY(30px);}to {opacity: 1;transform: translateY(0);}}.loader {position: fixed;top: 0;left: 0;width: 100%;height: 100%;background-color: white;display: flex;flex-direction: column;align-items: center;justify-content: center;z-index: 9999;transition: opacity 0.5s ease;}.loader.fade-out {opacity: 0;pointer-events: none;}.loader-spinner {width: 50px;height: 50px;border: 5px solid var(--primary-color);border-top-color: var(--accent-color);border-radius: 50%;animation: spin 1s linear infinite;margin-bottom: 20px;}.loader-text {font-family: 'Playfair Display', serif;color: var(--dark-color);font-size: 1.2rem;letter-spacing: 1px;}@keyframes spin {to {transform: rotate(360deg);}}a:focus, button:focus, input:focus, textarea:focus, select:focus {outline: 2px solid var(--accent-color);outline-offset: 2px;}</style>
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader-spinner"></div>
+    <div class="loader-text">SER CROCHET</div>
+  </div>
+
+  <!-- Skip to content link -->
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="Img/logo_ser_crochet.webp" alt="SER CROCHET Logo" width="50" height="50">
+        <span class="logo-text">SER CROCHET</span>
+      </div>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#productos" class="nav-cta">Comprar Ahora</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Menú" aria-expanded="false" aria-controls="mainNav">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+      <div class="hero-content" data-aos="fade-up">
+        <h1>Artesanía Hecha con Amor</h1>
+        <p>Descubre nuestra colección exclusiva de productos tejidos a mano con técnicas tradicionales y materiales sostenibles.</p>
+        <div class="hero-btns">
+          <a href="#productos" class="btn btn-primary">Ver Colección</a>
+          <a href="#contacto" class="btn btn-secondary">Contactar Artesana</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="nosotros">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Sobre Nosotros</h2>
+        <p>Conoce la historia y pasión detrás de cada pieza que creamos</p>
+      </div>
+
+      <div class="about-container">
+        <div class="about-img" data-aos="fade-right">
+          <img src="Img/artesana-trabajando.webp" alt="Artesana trabajando en crochet" width="600" height="600" loading="">
+        </div>
+
+        <div class="about-content" data-aos="fade-left">
+          <h3>Nuestra Historia</h3>
+          <p>SER CROCHET nació del amor por el tejido y el deseo de preservar las técnicas artesanales tradicionales. Cada pieza que creamos cuenta una historia y lleva impregnada la dedicación de nuestras manos.</p>
+          <p>Utilizamos materiales ecológicos y sostenibles, contribuyendo al cuidado del medio ambiente mientras creamos piezas únicas y duraderas.</p>
+          
+          <div class="mission-vision">
+            <div class="mission-card" data-aos="fade-up" data-aos-delay="100">
+              <i class="fas fa-hands-helping" aria-hidden="true"></i>
+              <h4>Misión</h4>
+              <p>Crear tejidos artesanales de alta calidad que combinen tradición y diseño contemporáneo, promoviendo el comercio justo y el consumo responsable.</p>
+            </div>
+
+            <div class="mission-card" data-aos="fade-up" data-aos-delay="200">
+              <i class="fas fa-eye" aria-hidden="true"></i>
+              <h4>Visión</h4>
+              <p>Ser reconocidos como referentes en artesanía colombiana, expandiendo nuestras técnicas tradicionales a nuevas generaciones y mercados internacionales.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products-section" id="productos">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Nuestros Productos</h2>
+        <p>Descubre nuestra colección de piezas únicas tejidas a mano</p>
+      </div>
+
+      <div class="products-filter" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="bolsos">Bolsos</button>
+        <button class="filter-btn" data-filter="accesorios">Accesorios y Prendas</button>
+        <button class="filter-btn" data-filter="decoracion">Decoración</button>
+      </div>
+
+      <div class="swiper" data-aos="fade-up">
+        <div class="swiper-wrapper">
+          <!-- Product 1 -->
+          <div class="swiper-slide" data-category="bolsos">
+            <div class="product-card">
+              <div class="product-img">
+                <img src="Img/productos/bolsos/bolsa-lia_1.webp" alt="Bolsa Lia en crochet" width="400" height="300" loading="">
+                <span class="product-badge">Nuevo</span>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Bolso</span>
+                <h3 class="product-title">Bolsa Lia</h3>
+                <p class="product-description">Tejido en trapillo artesanal, disponible en blanco o negro. Tamaño ideal para tu día a día.</p>
+                <div class="product-price">$55.000 COP</div>
+                <a href="https://wa.me/573226102915?text=Me%20interesa%20la%20Bolsa%20Lia" class="product-cta">Consultar</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="swiper-slide" data-category="bolsos">
+            <div class="product-card">
+              <div class="product-img">
+                <img src="Img/productos/bolsos/bola-ilu.webp" alt="Bolsa Mini Ilu color chocolate" width="400" height="300" loading="">
+              </div>
+              <div class="product-info">
+                <span class="product-category">Bolso</span>
+                <h3 class="product-title">Mini Ilu Chocolate</h3>
+                <p class="product-description">Hecha a mano con trapillo. Tamaño compacto y perfecto para complementar tu estilo.</p>
+                <div class="product-price">$40.000 COP</div>
+                <a href="https://wa.me/573226102915?text=Me%20interesa%20la%20Bolsa%20Mini%20Ilu" class="product-cta">Consultar</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="swiper-slide" data-category="bolsos">
+            <div class="product-card">
+              <div class="product-img">
+                <img src="Img/productos/bolsos/bolsa-bag.webp" alt="Bolsa Bag en crochet" width="400" height="300" loading="">
+              </div>
+              <div class="product-info">
+                <span class="product-category">Bolso</span>
+                <h3 class="product-title">Bolsa Bag</h3>
+                <p class="product-description">Diseño artesanal en trapillo, resistente y elegante para cualquier ocasión.</p>
+                <div class="product-price">$60.000 COP</div>
+                <a href="https://wa.me/573226102915?text=Me%20interesa%20la%20Bolsa%20Bag" class="product-cta">Consultar</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="swiper-slide" data-category="decoracion">
+            <div class="product-card">
+              <div class="product-img">
+                <img src="Img/productos/decoracion/tulipan.webp" alt="Tulipán en crochet" width="400" height="300" loading="">
+                <span class="product-badge">Más vendido</span>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Decoración</span>
+                <h3 class="product-title">Tulipán Artesanal</h3>
+                <p class="product-description">Hermoso tulipán tejido a mano, perfecto para decorar tus espacios o regalar.</p>
+                <div class="product-price">$15.000 COP</div>
+                <a href="https://wa.me/573226102915?text=Me%20interesa%20el%20Tulipán%20Artesanal" class="product-cta">Consultar</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="swiper-slide" data-category="decoracion">
+            <div class="product-card">
+              <div class="product-img">
+                <img src="Img/productos/decoracion/ramo_de_girasoles.webp" alt="Ramo de girasoles en crochet" width="400" height="300" loading="">
+              </div>
+              <div class="product-info">
+                <span class="product-category">Decoración</span>
+                <h3 class="product-title">Ramo de Girasoles</h3>
+                <p class="product-description">Hermoso ramo tejido a mano, compuesto por girasoles, margaritas y abejitas.</p>
+                <div class="product-price">$70.000 COP</div>
+                <a href="https://wa.me/573226102915?text=Me%20interesa%20el%20Ramo%20de%20Girasoles" class="product-cta">Consultar</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product prendas 1 -->
+          <div class="swiper-slide" data-category="accesorios">
+            <div class="product-card">
+              <div class="product-img">
+                <img src="Img/productos/accesoriosPrendas/Bandanas-a-crochet_1.webp" alt="Bandanas tejidas a mano en color marfil y lila" width="400" height="300" loading="">
+              </div>
+              <div class="product-info">
+                <span class="product-category">Accesorio</span>
+                <h3 class="product-title">Bandanas Flor de Lila</h3>
+                <p class="product-description">Bandanas triangulares tejidas a mano en tonos marfil y lila. Suaves, frescas y perfectas para usar como accesorio para el cabello o pañuelo.</p>
+                <div class="product-price">$30.000 COP</div>
+                <a href="https://wa.me/573226102915?text=Me%20interesa%20la%20Bolsa%20de%20Mano" class="product-cta">Consultar</a>
+              </div>
+            </div>
+          </div>
+                    <!-- Product prendas 2 -->
+          <div class="swiper-slide" data-category="accesorios">
+            <div class="product-card">
+              <div class="product-img">
+                <img src="Img/productos/accesoriosPrendas/Top-girasol.webp" alt="Top en crochet con detalle de girasoles" width="400" height="300" loading="">
+              </div>
+              <div class="product-info">
+                <span class="product-category">prendas</span>
+                <h3 class="product-title">Top Girasol</h3>
+                <p class="product-description">Top artesanal con detalle de girasoles en la base. Cómodo, fresco y lleno de color para tus días soleados.</p>
+                <div class="product-price">$75.000 COP</div>
+                <a href="https://wa.me/573226102915?text=Me%20interesa%20la%20Bolsa%20de%20Mano" class="product-cta">Consultar</a>
+              </div>
+            </div>
+          </div>
+                    <!-- Product prendas 3 -->
+          <div class="swiper-slide" data-category="accesorios">
+            <div class="product-card">
+              <div class="product-img">
+                <img src="Img/productos/accesoriosPrendas/Top-Margaret.webp" alt="Top amarillo tejido a mano con volante decorativo" width="400" height="300" loading="">
+              </div>
+              <div class="product-info">
+                <span class="product-category">prendas</span>
+                <h3 class="product-title">Top Margaret</h3>
+                <p class="product-description">Top amarillo vibrante con volante decorativo. Ideal para verano y outfits alegres.</p></p>
+                <div class="product-price">$75.000 COP</div>
+                <a href="https://wa.me/573226102915?text=Me%20interesa%20la%20Bolsa%20de%20Mano" class="product-cta">Consultar</a>
+              </div>
+            </div>
+          </div>
+                    <!-- Product prendas 4 -->
+          <div class="swiper-slide" data-category="accesorios">
+            <div class="product-card">
+              <div class="product-img">
+                <img src="Img/productos/accesoriosPrendas/Diademas.webp" alt="Diadema tejida a mano con diseño de encaje floral" width="400" height="300" loading="">
+              </div>
+              <div class="product-info">
+                <span class="product-category">Accesorio</span>
+                <h3 class="product-title">Diadema Encaje Floral</h3>
+                <p class="product-description">Elegante diadema tejida a mano con patrón floral calado. Ideal para recogidos, trenzas o para darle un toque artesanal a tu peinado.</p>
+                <div class="product-price">$20.000 COP</div>
+                <a href="https://wa.me/573226102915?text=Me%20interesa%20la%20Bolsa%20de%20Mano" class="product-cta">Consultar</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div class="swiper-slide" data-category="bolsos">
+            <div class="product-card">
+              <div class="product-img">
+                <img src="Img/productos/bolsos/mochila_tejida_mediana.webp" alt="Mochila tejida mediana" width="400" height="300" loading="">
+                <span class="product-badge">Oferta</span>
+              </div>
+              <div class="product-info">
+                <span class="product-category">Bolso</span>
+                <h3 class="product-title">Mochila Tejida</h3>
+                <p class="product-description">Práctica y elegante mochila tejida a mano, ideal para el día a día.</p>
+                <div class="product-price">$80.000 COP</div>
+                <a href="https://wa.me/573226102915?text=Me%20interesa%20la%20Mochila%20Tejida" class="product-cta">Consultar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiper Controls -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next" aria-label="Siguiente producto"></div>
+        <div class="swiper-button-prev" aria-label="Producto anterior"></div>
+      </div>
+
+      <div class="text-center" data-aos="fade-up">
+        <a href="CATALOGO-SER-CROCHET-2025.pdf" class="btn btn-primary" download>Descargar Catálogo Completo</a>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonios">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Testimonios</h2>
+        <p>Lo que dicen nuestros clientes sobre nuestros productos</p>
+      </div>
+
+      <div class="testimonials-container">
+        <div class="testimonial-card" data-aos="fade-up">
+          <div class="testimonial-content">
+            "Los productos de SER CROCHET son únicos y de excelente calidad. Recibí muchos cumplidos por mi bolso y ya estoy pensando en mi próxima compra."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-img">
+              <img src="Img/testimonio1.webp" alt="Ana Gómez" width="50" height="50" loading="lazy">
+            </div>
+            <div class="author-info">
+              <h4>Ana Gómez</h4>
+              <p>Bogotá</p>
+              <div class="rating" aria-label="5 de 5 estrellas">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-content">
+            "La atención personalizada y el cuidado en los detalles hacen la diferencia. Mi ramo de girasoles es exactamente como lo imaginé, ¡perfecto para mi sala!"
+          </div>
+          <div class="testimonial-author">
+            <div class="author-img">
+              <img src="Img/testimonio2.webp" alt="Lucía Ramírez" width="50" height="50" loading="lazy">
+            </div>
+            <div class="author-info">
+              <h4>Lucía Ramírez</h4>
+              <p>Medellín</p>
+              <div class="rating" aria-label="4 de 5 estrellas">★★★★☆</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="testimonial-content">
+            "Como regalo para mi madre fue un éxito. El tulipán tejido llegó en perfecto estado y con una presentación impecable. Definitivamente volveré a comprar."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-img">
+              <img src="Img/testimonio3.webp" alt="Marta Torres" width="50" height="50" loading="lazy">
+            </div>
+            <div class="author-info">
+              <h4>Marta Torres</h4>
+              <p>Cali</p>
+              <div class="rating" aria-label="5 de 5 estrellas">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contacto">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas o deseas un producto personalizado? Escríbenos</p>
+      </div>
+
+      <div class="contact-container">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Ubicación</h3>
+              <p>Los Córdobas, Colombia</p>
+              <p>Envíos a todo el país</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt" aria-hidden="true"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Teléfono</h3>
+              <p><a href="tel:+573226102915">+57 322 610 2915</a></p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Email</h3>
+              <p><a href="mailto:Sarayespitia4@gmail.com">Sarayespitia4@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-clock" aria-hidden="true"></i>
+            </div>
+            <div class="contact-text">
+              <h3>Horario</h3>
+              <p>Lunes a Viernes: 9am - 6pm</p>
+              <p>Sábados: 10am - 2pm</p>
+            </div>
+          </div>
+
+          <h3 style="margin-top: 20px;">Síguenos</h3>
+          <div class="social-links">
+            <a href="https://instagram.com/ser.crochet11" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/asher.walker.20" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://wa.me/573226102915" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form" data-aos="fade-left">
+          <form action="https://formsubmit.co/Sarayespitia4@gmail.com" method="POST">
+            <div class="form-group">
+              <label for="name">Nombre Completo</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+        
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+        
+            <div class="form-group">
+              <label for="phone">Teléfono (Opcional)</label>
+              <input type="tel" id="phone" name="phone" class="form-control">
+            </div>
+        
+            <div class="form-group">
+              <label for="subject">Asunto</label>
+              <input type="text" id="subject" name="subject" class="form-control" required>
+            </div>
+        
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" class="form-control" required></textarea>
+            </div>
+        
+            <!-- Configuración de FormSubmit -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://ser-crochet.netlify.app/gracias.html">
+        
+            <button type="submit" class="submit-btn">Enviar Mensaje</button>
+          </form>
+        </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>SER CROCHET</h3>
+        <p>Artesanías tejidas a mano con amor y dedicación. Productos únicos y sostenibles para personas que valoran lo hecho a mano.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/ser.crochet11" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com/asher.walker.20" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+          <a href="https://wa.me/573226102915" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3>Menú</h3>
+        <ul class="footer-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Sobre Nosotros</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Productos</h3>
+        <ul class="footer-links">
+          <li><a href="#productos">Bolsos</a></li>
+          <li><a href="#productos">Accesorios y Prendas</a></li>
+          <li><a href="#productos">Decoración</a></li>
+          <li><a href="#productos">Personalizados</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contacto</h3>
+        <ul class="footer-links">
+          <li><a href="tel:+573226102915">+57 322 610 2915</a></li>
+          <li><a href="mailto:Sarayespitia4@gmail.com">Sarayespitia4@gmail.com</a></li>
+          <li>Los Córdobas, Colombia</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; <span id="current-year">2025</span> SER CROCHET. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/573226102915" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chatea con nosotros por WhatsApp">
+    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- Back to Top Button -->
+  <a href="#main-content" class="back-to-top" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- Cookie Consent -->
+  <div class="cookie-consent" id="cookieConsent">
+    <p>Utilizamos cookies para mejorar tu experiencia en nuestro sitio web. Al continuar navegando, aceptas nuestro uso de cookies.</p>
+    <button class="cookie-btn" id="acceptCookies">Aceptar</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>AOS.init({duration:800,easing:"ease-in-out",once:!0,disable:"phone"});const swiper=new Swiper(".swiper",{slidesPerView:1,spaceBetween:20,loop:!1,autoplay:{delay:5e3,disableOnInteraction:!1},pagination:{el:".swiper-pagination",clickable:!0},navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},breakpoints:{640:{slidesPerView:2},992:{slidesPerView:3}},a11y:{prevSlideMessage:"Producto anterior",nextSlideMessage:"Siguiente producto",paginationBulletMessage:"Ir al producto {{index}}"}}),menuBtn=document.getElementById("menuBtn"),mainNav=document.getElementById("mainNav");menuBtn.addEventListener("click",()=>{var e=mainNav.classList.toggle("active");menuBtn.setAttribute("aria-expanded",e),menuBtn.innerHTML=e?'<i class="fas fa-times" aria-hidden="true"></i>':'<i class="fas fa-bars" aria-hidden="true"></i>'}),document.querySelectorAll(".main-nav a").forEach(e=>{e.addEventListener("click",()=>{window.innerWidth<=768&&(mainNav.classList.remove("active"),menuBtn.setAttribute("aria-expanded","false"),menuBtn.innerHTML='<i class="fas fa-bars" aria-hidden="true"></i>')})}),window.addEventListener("load",()=>{setTimeout(()=>{document.querySelector(".loader").classList.add("fade-out")},1500)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href"),e=document.querySelector(t);e&&(window.scrollTo({top:e.offsetTop-80,behavior:"smooth"}),"#main-content"!==t&&history.pushState(null,null,t))})}),window.addEventListener("scroll",()=>{const e=document.querySelector(".main-header");100<window.scrollY?e.style.boxShadow="0 2px 15px rgba(0, 0, 0, 0.1)":e.style.boxShadow="none";const t=document.querySelector(".back-to-top");300<window.scrollY?t.classList.add("show"):t.classList.remove("show")});const filterBtns=document.querySelectorAll(".filter-btn");filterBtns.forEach(n=>{n.addEventListener("click",()=>{filterBtns.forEach(e=>e.classList.remove("active")),n.classList.add("active");var t=n.getAttribute("data-filter");const e=document.querySelectorAll(".swiper-slide");e.forEach(e=>{"all"===t||e.getAttribute("data-category")===t?e.style.display="block":e.style.display="none"}),swiper.update()})});const contactForm=document.getElementById("contactForm");contactForm&&contactForm.addEventListener("submit",e=>{e.preventDefault(),alert("¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto."),contactForm.reset()});const cookieConsent=document.getElementById("cookieConsent"),acceptCookies=document.getElementById("acceptCookies");if(localStorage.getItem("cookiesAccepted")||setTimeout(()=>{cookieConsent.classList.add("show")},2e3),acceptCookies.addEventListener("click",()=>{localStorage.setItem("cookiesAccepted","true"),cookieConsent.classList.remove("show")}),document.getElementById("current-year").textContent=(new Date).getFullYear(),"loading"in HTMLImageElement.prototype){const o=document.querySelectorAll('img[loading="lazy"]');o.forEach(e=>{e.src=e.dataset.src})}else{const q=document.createElement("script");q.src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js",document.body.appendChild(q),q.onload=()=>{new LazyLoad({elements_selector:"[loading=lazy]"})}}</script>
+</body>
+</html>
